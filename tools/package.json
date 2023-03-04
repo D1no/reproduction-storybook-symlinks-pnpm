@@ -6,9 +6,22 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-beta.61",
+    "@storybook/addon-interactions": "^7.0.0-beta.61",
+    "@storybook/addon-links": "^7.0.0-beta.61",
+    "@storybook/blocks": "^7.0.0-alpha.8",
+    "@storybook/react": "^7.0.0-beta.61",
+    "@storybook/react-vite": "^7.0.0-beta.61",
+    "@storybook/testing-library": "^0.0.14-next.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "vite": "^4.1.4",
-    "typescript": "^4.9.5"
+    "prop-types": "^15.8.1",
+    "storybook": "^7.0.0-beta.61",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   }
 }
