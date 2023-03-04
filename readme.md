@@ -25,6 +25,10 @@ The same component is included as (1) local copy inside `stories/`, (2) as refer
 
 ❌ Only variant (1) has JSDoc converted to story docs (!)
 
+Exact same component and story, different location = no JSDocGen.
+![storybook_no_jsdocgen](https://user-images.githubusercontent.com/2397125/222922498-ed8c6d83-c2f8-4f0f-b570-30e955ccdc6c.gif)
+
+
 ### Expected Behavior
 
 1. Components that are _outside_ of the storybook root folder (here: `tools/`), but referenced in SBs `main.ts` should have JSDocs converted to story docs. As by example here:
