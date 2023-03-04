@@ -1,12 +1,15 @@
 <sub>Reproduction was created with `pnpx storybook@next init --builder vite`</sub>
+
 ### Reproduction: No Storybook JSDocGen inside of Monorepo
 
 _No TypeScript JSDoc to Story Documentation. Basic monorepo scenario where the UI library is outside of test and build tooling._
 
-(1) Install
+(1) Install (pnpm)
+
+<sub>Which package manager likely doesn't matter.</sub>
 
 ```bash
-cd ui && pnpm install && cd ../tools pnpm install
+cd ui && pnpm install && cd ../tools & pnpm install
 ```
 
 (2) Run
@@ -14,8 +17,6 @@ cd ui && pnpm install && cd ../tools pnpm install
 ```bash
 pnpm run storybook
 ```
-
-<sub>Which package manager likely doesn't matter.</sub>
 
 ### Issue
 
@@ -27,7 +28,6 @@ The same component is included as (1) local copy inside `stories/`, (2) as refer
 
 Exact same component and story, different location = no JSDocGen.
 ![storybook_no_jsdocgen](https://user-images.githubusercontent.com/2397125/222922498-ed8c6d83-c2f8-4f0f-b570-30e955ccdc6c.gif)
-
 
 ### Expected Behavior
 
@@ -49,6 +49,7 @@ cd tools/stories && ln -s ../../ui/ComponentAsSymlink ComponentAsSymlink
 ```
 
 ### System
+
 Via `pnpx sb@next info` on 2023-03-04
 
 ```cpp
@@ -65,11 +66,11 @@ Environment Info:
     Firefox: 97.0.1
     Safari: 16.3
   npmPackages:
-    @storybook/addon-essentials: ^7.0.0-beta.61 => 7.0.0-beta.61 
-    @storybook/addon-interactions: ^7.0.0-beta.61 => 7.0.0-beta.61 
-    @storybook/addon-links: ^7.0.0-beta.61 => 7.0.0-beta.61 
-    @storybook/blocks: ^7.0.0-alpha.8 => 7.0.0-alpha.8 
-    @storybook/react: ^7.0.0-beta.61 => 7.0.0-beta.61 
-    @storybook/react-vite: ^7.0.0-beta.61 => 7.0.0-beta.61 
-    @storybook/testing-library: ^0.0.14-next.1 => 0.0.14-next.1 
+    @storybook/addon-essentials: ^7.0.0-beta.61 => 7.0.0-beta.61
+    @storybook/addon-interactions: ^7.0.0-beta.61 => 7.0.0-beta.61
+    @storybook/addon-links: ^7.0.0-beta.61 => 7.0.0-beta.61
+    @storybook/blocks: ^7.0.0-alpha.8 => 7.0.0-alpha.8
+    @storybook/react: ^7.0.0-beta.61 => 7.0.0-beta.61
+    @storybook/react-vite: ^7.0.0-beta.61 => 7.0.0-beta.61
+    @storybook/testing-library: ^0.0.14-next.1 => 0.0.14-next.1
 ```
