@@ -9,7 +9,7 @@ _No TypeScript JSDoc to Story Documentation. Basic monorepo scenario where the U
 <sub>Which package manager likely doesn't matter.</sub>
 
 ```bash
-cd ui && pnpm install && cd ../tools & pnpm install
+cd ui && pnpm install && cd ../tools && pnpm install
 ```
 
 (2) Run
