@@ -1,0 +1,9 @@
+# Usually this should be committed. Leaving out for simplicity.
+pnpm-lock.yaml
+
+# Node
+node_modules
+
+# System Files
+.DS_Store
+Thumbs.db

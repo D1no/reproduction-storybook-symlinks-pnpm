@@ -1,0 +1,13 @@
+{
+  "name": "ui",
+  "description": "All React UI Components of the Mono Repo",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^4.9.5"
+  }
+}
