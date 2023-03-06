@@ -1,4 +1,7 @@
-<sub>Reproduction was created with `pnpx storybook@next init --builder vite`</sub>
+<sub>Reproduction was created with `pnpx storybook@next init --builder vite`. Consecutive update via `pnpx storybook@next upgrade --prerelease`</sub>
+
+Issue: [storybookjs/storybook/issues/21399](https://github.com/storybookjs/storybook/issues/21399)<br>
+Storybook Version: `7.0.0-beta.62`
 
 ### Reproduction: No Storybook JSDocGen inside of Monorepo
 
@@ -50,7 +53,7 @@ cd tools/stories && ln -s ../../ui/ComponentAsSymlink ComponentAsSymlink
 
 ### System
 
-Via `pnpx sb@next info` on 2023-03-04
+Via `pnpx sb@next info` on 2023-03-06
 
 ```cpp
 Environment Info:
@@ -66,11 +69,11 @@ Environment Info:
     Firefox: 97.0.1
     Safari: 16.3
   npmPackages:
-    @storybook/addon-essentials: ^7.0.0-beta.61 => 7.0.0-beta.61
-    @storybook/addon-interactions: ^7.0.0-beta.61 => 7.0.0-beta.61
-    @storybook/addon-links: ^7.0.0-beta.61 => 7.0.0-beta.61
-    @storybook/blocks: ^7.0.0-alpha.8 => 7.0.0-alpha.8
-    @storybook/react: ^7.0.0-beta.61 => 7.0.0-beta.61
-    @storybook/react-vite: ^7.0.0-beta.61 => 7.0.0-beta.61
+    @storybook/addon-essentials: ^7.0.0-beta.62 => 7.0.0-beta.62
+    @storybook/addon-interactions: ^7.0.0-beta.62 => 7.0.0-beta.62
+    @storybook/addon-links: ^7.0.0-beta.62 => 7.0.0-beta.62
+    @storybook/blocks: ^7.0.0-beta.62 => 7.0.0-beta.62
+    @storybook/react: ^7.0.0-beta.62 => 7.0.0-beta.62
+    @storybook/react-vite: ^7.0.0-beta.62 => 7.0.0-beta.62
     @storybook/testing-library: ^0.0.14-next.1 => 0.0.14-next.1
 ```
