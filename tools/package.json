@@ -1,6 +1,7 @@
 {
   "name": "tools",
   "description": "Testing Tools",
+  "packageManager": "pnpm@7.29.3",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
