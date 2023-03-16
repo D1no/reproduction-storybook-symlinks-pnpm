@@ -1,7 +1,8 @@
 <sub>Reproduction was created with `pnpx storybook@next init --builder vite` on `node` version `18 LTS`. Consecutive update via `pnpx storybook@next upgrade --prerelease --skip-check`</sub>
 
 Issue: [storybookjs/storybook/issues/21399](https://github.com/storybookjs/storybook/issues/21399)<br>
-Storybook Version: `7.0.0-rc.1`
+Storybook Version: `7.0.0-rc.3`
+PNPM Version: `7.29.3`
 
 ### Reproduction: No Storybook JSDocGen inside of Monorepo
 
@@ -53,7 +54,7 @@ cd tools/stories && ln -s ../../ui/ComponentAsSymlink ComponentAsSymlink
 
 ### System
 
-Via `pnpx sb@next info` on 2023-03-12
+Via `pnpx sb@next info` on 2023-03-16
 
 ```cpp
 Environment Info:
@@ -65,15 +66,15 @@ Environment Info:
     Node: 18.14.1 - ~/.nvs/default/bin/node
     npm: 9.3.1 - ~/.nvs/default/bin/npm
   Browsers:
-    Chrome: 110.0.5481.177
+    Chrome: 111.0.5563.64
     Firefox: 97.0.1
     Safari: 16.3
   npmPackages:
-    @storybook/addon-essentials: ^7.0.0-rc.1 => 7.0.0-rc.1
-    @storybook/addon-interactions: ^7.0.0-rc.1 => 7.0.0-rc.1
-    @storybook/addon-links: ^7.0.0-rc.1 => 7.0.0-rc.1
-    @storybook/blocks: ^7.0.0-rc.1 => 7.0.0-rc.1
-    @storybook/react: ^7.0.0-rc.1 => 7.0.0-rc.1
-    @storybook/react-vite: ^7.0.0-rc.1 => 7.0.0-rc.1
-    @storybook/testing-library: ^0.0.14-next.1 => 0.0.14-next.1
+    @storybook/addon-essentials: ^7.0.0-rc.3 => 7.0.0-rc.3 
+    @storybook/addon-interactions: ^7.0.0-rc.3 => 7.0.0-rc.3 
+    @storybook/addon-links: ^7.0.0-rc.3 => 7.0.0-rc.3 
+    @storybook/blocks: ^7.0.0-rc.3 => 7.0.0-rc.3 
+    @storybook/react: ^7.0.0-rc.3 => 7.0.0-rc.3 
+    @storybook/react-vite: ^7.0.0-rc.3 => 7.0.0-rc.3 
+    @storybook/testing-library: ^0.0.14-next.1 => 0.0.14-next.1 
 ```
