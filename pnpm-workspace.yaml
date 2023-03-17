@@ -1,0 +1,7 @@
+packages:
+  # All additional tools for tests and development
+  - "tools/**"
+  # All ui elements and components in subdirs of ui/
+  - "ui/**"
+  # Publishable ui libraries
+  - "views/**"

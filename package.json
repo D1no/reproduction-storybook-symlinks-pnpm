@@ -1,0 +1,25 @@
+{
+  "name": "reproduction-storybook-symlinks-pnpm",
+  "description": "Testing storybook with pnpm and symlinks like one would find in common monorepo architectures",
+  "author": "Dino Scheidt <github@din.ooo>",
+  "packageManager": "pnpm@7.29.3",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7",
+    "yarn": "please-use-pnpm",
+    "npm": "please-use-pnpm"
+  },
+  "scripts": {
+    "storybook": "pnpm --parallel --stream --if-present -r run storybook",
+    "storybook:case_1": "export TEST_CASE='1_local_symlink_stories' && pnpm --parallel --stream --if-present -r run storybook",
+    "storybook:case_2": "export TEST_CASE='2_manual_outside_root_stories' && pnpm --parallel --stream --if-present -r run storybook",
+    "storybook:case_3": "export TEST_CASE='3_proper_workspace_stories_but_recursion' && pnpm --parallel --stream --if-present -r run storybook",
+    "storybook:case_4": "export TEST_CASE='4_proper_workspace_stories_trying_to_avoid_recursion_with_glob' && pnpm --parallel --stream --if-present -r run storybook"
+  },
+  "keywords": [
+    "storybook",
+    "vite",
+    "pnpm",
+    "reproduction"
+  ]
+}

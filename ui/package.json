@@ -1,6 +1,6 @@
 {
-  "name": "ui",
-  "description": "All React UI Components of the Mono Repo",
+  "name": "@repo/ui",
+  "description": "Mono Repo React UI Components of the Mono Repo",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

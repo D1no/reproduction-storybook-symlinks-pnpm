@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ComponentProps {
+export interface ComponentProps {
   /**
    * Set the text of the component. This is a JSDoc of the text property.
    */
