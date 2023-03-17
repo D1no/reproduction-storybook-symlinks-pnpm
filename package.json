@@ -10,6 +10,7 @@
     "npm": "please-use-pnpm"
   },
   "scripts": {
+    "update-storybook": "pnpm --parallel --stream --if-present -r run update-storybook && pnpm install",
     "storybook": "pnpm --parallel --stream --if-present -r run storybook",
     "storybook:case_1": "export TEST_CASE='1_local_symlink_stories' && pnpm --parallel --stream --if-present -r run storybook",
     "storybook:case_2": "export TEST_CASE='2_manual_outside_root_stories' && pnpm --parallel --stream --if-present -r run storybook",
