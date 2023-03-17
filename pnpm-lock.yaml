@@ -9,19 +9,19 @@ importers:
     specifiers:
       '@repo/ui': workspace:*
       '@repo/views': workspace:*
-      '@storybook/addon-essentials': ^7.0.0-rc.3
-      '@storybook/addon-interactions': ^7.0.0-rc.3
-      '@storybook/addon-links': ^7.0.0-rc.3
-      '@storybook/blocks': ^7.0.0-rc.3
-      '@storybook/react': ^7.0.0-rc.3
-      '@storybook/react-vite': ^7.0.0-rc.3
+      '@storybook/addon-essentials': ^7.0.0-rc.4
+      '@storybook/addon-interactions': ^7.0.0-rc.4
+      '@storybook/addon-links': ^7.0.0-rc.4
+      '@storybook/blocks': ^7.0.0-rc.4
+      '@storybook/react': ^7.0.0-rc.4
+      '@storybook/react-vite': ^7.0.0-rc.4
       '@storybook/testing-library': ^0.0.14-next.1
       '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.11
       prop-types: ^15.8.1
       react: ^18.2.0
       react-dom: ^18.2.0
-      storybook: ^7.0.0-rc.3
+      storybook: ^7.0.0-rc.4
       typescript: ^4.9.5
       vite: ^4.1.4
     dependencies:
@@ -2983,7 +2983,7 @@ packages:
     resolution: {integrity: sha512-IO+MJPVhoqz+28h1qLAcBEH2+xHMK6MTyHJc7MTnnYb6wsoLR29POVGJ7LycmVXIqyy/4/2ShP5sUwTXuOwb/w==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 16.18.16
+      '@types/node': 18.15.3
     dev: true
 
   /@types/graceful-fs/4.1.6:
@@ -3031,7 +3031,7 @@ packages:
   /@types/node-fetch/2.6.2:
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
     dependencies:
-      '@types/node': 16.18.16
+      '@types/node': 18.15.3
       form-data: 3.0.1
     dev: true
 
