@@ -13,7 +13,8 @@
     "update-storybook": "pnpm --parallel --stream --if-present -r run update-storybook && pnpm install",
     "storybook": "pnpm --parallel --stream --if-present -r run storybook",
     "storybook:case_1": "export TEST_CASE='1_local_symlink_stories' && pnpm --parallel --stream --if-present -r run storybook",
-    "storybook:case_2": "export TEST_CASE='2_manual_outside_root_stories' && pnpm --parallel --stream --if-present -r run storybook",
+    "storybook:case_2-1": "export TEST_CASE='2-1_manual_outside_root_stories' && pnpm --parallel --stream --if-present -r run storybook",
+    "storybook:case_2-2": "export TEST_CASE='2-2_manual_outside_root_stories_direct_to_capitalized_component_folder' && pnpm --parallel --stream --if-present -r run storybook",
     "storybook:case_3": "export TEST_CASE='3_proper_workspace_stories_but_recursion' && pnpm --parallel --stream --if-present -r run storybook",
     "storybook:case_4": "export TEST_CASE='4_proper_workspace_stories_trying_to_avoid_recursion_with_glob' && pnpm --parallel --stream --if-present -r run storybook"
   },

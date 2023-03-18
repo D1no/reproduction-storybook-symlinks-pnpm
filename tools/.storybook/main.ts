@@ -19,7 +19,7 @@ switch (issueCase) {
       "../stories/**/*.stories.@(js|jsx|ts|tsx)",
     ];
     break;
-  case "2_manual_outside_root_stories":
+  case "2-1_manual_outside_root_stories":
     configStories = [
       /**
        * Manual out of root path to ui components.
@@ -27,6 +27,16 @@ switch (issueCase) {
        * -> No live reload when adding new stories files (needs restart)
        */
       "../../ui/**/*.stories.@(js|jsx|ts|tsx)",
+    ];
+    break;
+  case "2-2_manual_outside_root_stories_direct_to_capitalized_component_folder":
+    configStories = [
+      /**
+       * Manual out of root path to a single ui component in a capitalized folder.
+       * -> Breaks with "Unable to index ./../ui/Component/index.stories.tsx:"
+       */
+      //        ↓ this
+      "../../ui/Component/**/*.stories.@(js|jsx|ts|tsx)",
     ];
     break;
   case "3_proper_workspace_stories_but_recursion":
