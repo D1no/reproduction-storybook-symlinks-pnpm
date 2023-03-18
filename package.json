@@ -10,6 +10,8 @@
     "npm": "please-use-pnpm"
   },
   "scripts": {
+    "clean-install": "rm -rf **/node_modules && pnpm store prune && pnpm install --frozen-lockfile",
+    "info-storybook": "cd tools && pnpx sb@next info && cd ..",
     "update-storybook": "pnpm --parallel --stream --if-present -r run update-storybook && pnpm install",
     "storybook": "pnpm --parallel --stream --if-present -r run storybook",
     "storybook:case_1": "export TEST_CASE='1_local_symlink_stories' && pnpm --parallel --stream --if-present -r run storybook",

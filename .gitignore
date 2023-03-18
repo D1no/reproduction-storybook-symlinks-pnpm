@@ -2,6 +2,9 @@
 node_modules
 .cache
 
+# No npm
+package-lock.json
+
 # System Files
 .DS_Store
 Thumbs.db
