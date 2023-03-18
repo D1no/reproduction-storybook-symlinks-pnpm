@@ -31,7 +31,13 @@ This repository mimics a typical integrated monorepo architecture where individu
 
 ### How to run Storybook Issues Inspection
 
-Clone and install
+Clone [D1no/reproduction-storybook-symlinks-pnpm](https://github.com/D1no/reproduction-storybook-symlinks-pnpm)
+
+```bash
+git clone git@github.com:D1no/reproduction-storybook-symlinks-pnpm.git && cd reproduction-storybook-symlinks-pnpm.git
+```
+
+and install
 
 ```bash
 pnpm install
@@ -43,17 +49,21 @@ pnpm install
 > pnpm clean-install
 > ```
 
-then for the respective case...
+then for the case run the respective pnpm script...
+
+> these are defined in [main.ts](https://github.com/D1no/reproduction-storybook-symlinks-pnpm/blob/master/tools/.storybook/main.ts) under `tools/.storybook/main.ts`
 
 ### Expectation
 
-After running `pnpx storybook@next init --builder vite`, official storybook features should "[just work...](https://youtu.be/P0hJm5v8TJw?t=1980)" without any additional configuration of loaders, builders or other down stream dependencies.
-
----
+After running `pnpx storybook@next init --builder vite`, official storybook features should function without any additional configuration of loaders, builders or other down stream dependencies installed by storybook.
 
 > ❗️ Preview images are from Version `7.0.0-rc.4` and NOT continuously updated to the latest version.
 
+---
+
 #### Case 1: Components inside storybook folder
+
+![1_local_symlink_stories-animated](https://user-images.githubusercontent.com/2397125/226085212-8a8a3a07-4ec9-4ecb-ab13-b7d41073132d.png)
 
 ```bash
 pnpm run storybook:case_1
@@ -74,6 +84,8 @@ Components that are _inside_ of the storybook root folder (`../stories`) will:
 
 #### Case 2-1: Components outside storybook folder
 
+![2-1_manual_outside_root_stories-animated](https://user-images.githubusercontent.com/2397125/226085223-b739c07d-7ce5-4d41-b0c4-cb6182e07958.png)
+
 ```bash
 pnpm run storybook:case_2-1
 ```
@@ -87,6 +99,8 @@ Components that are _outside_ of the storybook root folder but referenced with a
 ---
 
 #### Case 2-2: Single capitalized component folder outside storybook
+
+![2-2_manual_outside_root_stories_direct_to_capitalized_component_folder](https://user-images.githubusercontent.com/2397125/226085238-4d4b05ed-d1ce-4fca-be4b-75246720c0d0.png)
 
 ```bash
 pnpm run storybook:case_2-2
@@ -122,6 +136,8 @@ tools storybook: WARN     at async Promise.all (index 0)
 
 #### Case 3: Components added to storybook from `pnpm` workspace
 
+![3_proper_workspace_stories_but_recursion](https://user-images.githubusercontent.com/2397125/226085245-c6b5b8e7-c27f-423b-9486-d8949eb74a7b.png)
+
 ```bash
 pnpm run storybook:case_3
 ```
@@ -153,6 +169,8 @@ TypeError: importers[path] is not a function
 ---
 
 #### Case 4: Components via `pnpm` with globby workaround in `main.ts` to avoid `node_modules` recursion
+
+![4_proper_workspace_stories_trying_to_avoid_recursion_with_glob-animation](https://user-images.githubusercontent.com/2397125/226085251-72b615f6-88e9-4178-94aa-d44c8f9eef95.png)
 
 ```bash
 pnpm run storybook:case_4
